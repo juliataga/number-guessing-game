@@ -6,7 +6,6 @@ lower_range = int(input("enter lower range: "))
 upper_range = int(input("enter upper range: "))
 
 target = random.randint(lower_range,upper_range)
-print(target)
 
 total_guess = 7
 guess_counter = 0
@@ -16,6 +15,7 @@ while total_guess > guess_counter:
     
     if your_guess == target:
         print("Great! you guessd it right")
+        print(f"You attempted {guess_counter} times")
         break
 
     elif your_guess >= target:
